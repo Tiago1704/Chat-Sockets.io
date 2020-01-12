@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chat!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo left">Maker Chat</a>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#" class="logout waves-effect waves-light">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="messages"></div>
+    <form class="message">
+      <div class="input-field">
+        <input id="message" type="text" autocomplete="off">
+        <label for="message">Escribe tu mensaje aquí:</label>
+      </div>
+      <button class="btn btn-large btn-floating waves-effect waves-light">
+        <i class="material-icons">send</i>
+      </button>
+    </form>
+  </main>
+
+  <!-- Modal Structure -->
+  <form id="login" class="modal">
+    <div class="modal-content">
+      <h4>Nombre de usuario</h4>
+      <p>Tu identidad para que otros sepan quién eres:</p>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="username" class="username" type="text" placeholder="Nombre">
+        <label for="username">Nombre de usuario:</label>
+      </div>
+      <p>
+        <button class="btn waves-effect left">Aceptar</button>
+      </p>
+    </div>
+  </form>
+
+  <script src="https://unpkg.com/cookiesjs@1"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://unpkg.com/socket.io-client@1.7.3/dist/socket.io.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="/javascript.js"></script>
+</body>
+</html>

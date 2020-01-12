@@ -1,0 +1,98 @@
+nav {
+  background: #26a69a;
+}
+
+.nav-wrapper {
+  padding: 0 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+nav a.brand-logo {
+  position: static;
+  padding-left: 10px;
+}
+
+
+main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+  bottom: 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.messages,
+form.message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.messages {
+  height: calc(100% - 90px);
+  overflow-y: scroll;
+  margin: 10px;
+  border: 3px solid #ccc;
+  padding: 10px;
+}
+
+form.message {
+  top: calc(100% - 70px);
+  margin: 10px;
+  margin-bottom: 0;
+  max-width: 800px;
+}
+
+form.message .input-field {
+  width: calc(100% - 100px);
+  float: left;
+  margin: 0;
+}
+
+form.message .btn {
+  float: right;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+
+form.message input {
+  margin-bottom: 0;
+}
+
+#login .input-field {
+  margin-top: 30px;
+}
+
+#login button {
+  margin-bottom: 20px;
+}
+
+
+
+
+.msg.login,
+.msg.logout {
+  color: #888;
+}
+
+span.user {
+  font-weight: bold;
+}
+
+
+
+
+@media all and (max-width: 600px) {
+  main {
+    top: 60px;
+  }
+
+  .messages {
+    border: none;
+    padding: 0;
+  }
+}
